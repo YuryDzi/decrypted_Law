@@ -14,6 +14,7 @@ const Article = ({ imgUrl, date, text }) => (
       <p>Read Full Article</p>
     </div>
   </div>
-);
+); // BLOG
 
 export default Article;
+
