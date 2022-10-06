@@ -5,16 +5,16 @@ import './whatGPT3.css';
 const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div className="gpt3__whatgpt3-feature">
-      <Feature title="What is GPT-3" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by." />
+      <Feature title="DECRYPTEDLEGAL &amp; CONSULTING" text="Expert attorney advice. Fixed fees. Subscription plans. On-demand legal consulting. Aligned Incentives. No surprises." />
     </div>
     <div className="gpt3__whatgpt3-heading">
-      <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
+      <h1 className="gradient__text">WE FOCUS ON LEGAL ISSUES RELEVANT TO SUCCESSFUL BUSINESSES AND CREATORS</h1>
       <p>Explore the Library</p>
     </div>
     <div className="gpt3__whatgpt3-container">
-      <Feature title="Chatbots" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought." />
-      <Feature title="Knowledgebase" text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b" />
-      <Feature title="Education" text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b" />
+      <Feature title="Startups" text="Running a startup is exciting and rewarding, yet endlessly pushes you out of your comfort zone. We can be your sherpa and confidante on legal and business issues, including how to handle your legal operations and needs, so you can make bold choices and confidently face your challenges head-on each day." />
+      <Feature title="Creators" text="Being an independent creator raises a wide-range of risks and negotiating with brands can be intimidating. We can help you protect your creations, negotiate with brands, and draft contracts that are easy to read and use." />
+      <Feature title="Small Businesses" text="Even the most successful small businesses face legal challenges. We help with drafting and negotiating contracts, hiring and terminating employees, and protecting your intellectual property." />
     </div>
   </div>
 );

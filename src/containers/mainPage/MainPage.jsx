@@ -7,7 +7,7 @@ import CTA from '../../components/cta/CTA';
 import Navbar from '../../components/navbar/Navbar';
 import Brand from '../../components/brand/Brand';
 
-import '../../App.css';
+import './mainPage.css';
 
 const MainPage = () => (
   <div className="App">
