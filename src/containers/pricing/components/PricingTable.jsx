@@ -34,7 +34,7 @@ function pricingTable() {
       <div className="grid-1-5">
         <h2>Corporation Formation</h2>
         <h3>
-          <sup>$</sup>1500
+          {/* <sup>$</sup>1500 */}
         </h3>
         <ul>
           <li>Email Support</li>
@@ -42,7 +42,7 @@ function pricingTable() {
           <li>30GB Local Storage</li>
         </ul>
         <a href="button" className="button">
-          Sign Up
+          $1500
         </a>
       </div>
       <div className="grid-1-5">
@@ -55,9 +55,9 @@ function pricingTable() {
           <li>Phone Support</li>
           <li>Unlimited Data Transfer</li>
         </ul>
-        <a href="button" className="button">
+        {/* <a href="button" className="button">
           Sign Up
-        </a>
+        </a> */}
       </div>
       <div className="grid-1-5">
         <h2>Custom Contract Templates</h2>

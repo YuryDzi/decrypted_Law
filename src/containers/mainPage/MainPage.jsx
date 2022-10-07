@@ -14,12 +14,12 @@ const MainPage = () => (
     <div className="gradient__bg">
       <Navbar />
       <Header />
+      <Brand />
+      <Features />
+      <WhatGPT3 />
+      <CTA />
+      <Footer />
     </div>
-    <Brand />
-    <WhatGPT3 />
-    <Features />
-    <CTA />
-    <Footer />
   </div>
 );
 
