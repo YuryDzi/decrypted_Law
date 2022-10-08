@@ -6,7 +6,7 @@ function ContactInput() {
     <div className="container-input">
       {/* <div className="demo-flex-spacer" />   */}
       <div className="webflow-style-input">
-        <input className="" type="email" placeholder="Name" />
+        <input className="" type="name" placeholder="First & Last Name" />
         <input className="" type="email" placeholder="What's your email?" />
         <button type="button"> Send </button>
         {/* <button type="submit">
