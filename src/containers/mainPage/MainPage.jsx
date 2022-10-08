@@ -6,6 +6,7 @@ import Features from '../features/Features';
 import CTA from '../../components/cta/CTA';
 import Navbar from '../../components/navbar/Navbar';
 import Brand from '../../components/brand/Brand';
+import Team from '../team/Team';
 
 import './mainPage.css';
 
@@ -16,6 +17,7 @@ const MainPage = () => (
       <Header />
       <Brand />
       <Features />
+      <Team />
       <WhatGPT3 />
       <CTA />
       <Footer />
