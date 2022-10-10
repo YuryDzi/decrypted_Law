@@ -6,7 +6,8 @@ import './header.css';
 const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
-      <h1 className="gradient__text">DECRYPTED LEGAL &amp; CONSULTING</h1>
+      <h1 className="gradient__text">DECRYPTED</h1>
+      <h1 className="gradient__text">LEGAL &amp; CONSULTING</h1>
       <p>
         Decrypted is the modern law firm built for entrepreneurial startups,
         creators, and small business owners. Expert attorney advice. Upfront
