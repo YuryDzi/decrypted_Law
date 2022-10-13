@@ -100,6 +100,10 @@
     margin-right: 20px;
 }
 
+.social__media__li:hover {
+    cursor: pointer;
+}
+
 .main__container {
     justify-content: right;
     display: flex;

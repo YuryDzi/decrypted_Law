@@ -8,13 +8,19 @@ function SocialMedia() {
       <div className="social__media">
         <ul className="social__media">
           <li className="social__media__li">
-            <FaFacebook size="2em" color="white" />
+            <a href="https://www.facebook.com/">
+              <FaFacebook size="2em" color="white" />
+            </a>
           </li>
           <li className="social__media__li">
-            <FaInstagram size="2em" color="white" />
+            <a href="https://www.instagram.com/">
+              <FaInstagram size="2em" color="white" />
+            </a>
           </li>
           <li className="social__media__li">
-            <FaTwitter size="2em" color="white" />
+            <a href="https://www.twitter.com/">
+              <FaTwitter size="2em" color="white" />
+            </a>
           </li>
         </ul>
       </div>
