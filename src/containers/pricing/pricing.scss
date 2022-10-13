@@ -27,26 +27,33 @@ body {
 }
 
 .spliter{
-    padding: 20px;
+    padding: 80px;
 }
 
-// .headerText{
-//     padding-top: 100px;
-//     text-align: center;
-// }
+// this part
 
-// .sub-header-text{
-//     padding-left: 110px;
-//     padding-right: 110px;
-//     padding-bottom: 20px;
-//     text-align: center;
-// }
+.headerText{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.sub-header-text{
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+//this part 
 
 .container {
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
+  padding: 10px;
+  
 }
+
 
 .group:after {
   content: "";
@@ -62,6 +69,7 @@ body {
   text-align: center;
   transition: all .2s ease-in-out;
 }
+
 @media screen and (min-width: 700px) {
   .grid-1-5 {
     float: left;
@@ -173,21 +181,6 @@ ul {
 }
 ul li {
   margin: 0 0 0.8333333333333333em;
-}
-
-.button {
-  background-color: #9c83aa;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  padding: 0.75em 1.5em;
-  position: absolute;
-  bottom: 1.25em;
-  left: 50%;
-  margin-left: -60px;
-  text-decoration: none;
-  width: 120px;
 }
 
 .uppercase, .button, h2 {

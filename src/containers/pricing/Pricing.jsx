@@ -1,11 +1,49 @@
 import React from 'react';
 import PricingTable from './components/PricingTable';
+import PricingHeader from './components/PricingHeader';
 import Footer from '../footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
 import CTA from '../../components/cta/CTA';
 import './pricing.scss';
 
 function Pricing() {
+  const combainedRow = [
+    {
+      headerText: 'Subscription',
+      subHeader:
+        'If you are looking for continuous support and guidance on how to manage your legal matters, we offer a monthly prepaid subscription, charged monthly. For example, subscription could provide you with basic on-demand contract review and legal support.',
+      header: 'On-Demand General Counsel',
+      pricing: '495/month',
+      bp1: 'some bul',
+      bp2: 'another bul',
+      bp3: 'yet another bul',
+    },
+    {
+      header: 'Custom Contract Templates',
+      pricing: '300/each',
+      bp1: 'Advisor Agreement',
+      bp2: 'Consulting Agreement',
+      bp3: 'Brand Ambassador Agreement',
+      bp4: 'Influencer Sponsorship Agreement',
+      bp5: 'Content Collaboration Agreement',
+      bp6: 'Non-Disclosure Agreement',
+      bp7: 'Employee Offer Letter',
+      bp8: 'Confidential Information and Inventions Assignment',
+    },
+    {
+      header: 'Commercial Contracts and Terms of Service',
+      pricing: '1500/each',
+      bp1: 'Privacy Policy',
+      bp2: 'Terms of Service',
+      bp3: 'Master Services Agreement',
+      bp4: 'Enterprise Services Agreement',
+      bp5: 'Creative Services Agreement',
+      bp6: 'SaaS Agreement',
+      bp7: 'Talent Services Agreement',
+      bp8: 'Software License Agreement',
+    },
+  ];
+
   const firstRow = [
     {
       headerText: 'Corporation / LLC Formations',
@@ -89,6 +127,28 @@ function Pricing() {
       <div />
       <Navbar />
       <div className="container group">
+        <PricingHeader />
+      </div>
+      <div className="container group">
+        {combainedRow.map((item, index) => (
+          <PricingTable
+            headerText={item.headerText}
+            subHeader={item.subHeader}
+            header={item.header}
+            pricing={item.pricing}
+            bp1={item.bp1}
+            bp2={item.bp2}
+            bp3={item.bp3}
+            bp4={item.bp4}
+            bp5={item.bp5}
+            bp6={item.bp6}
+            bp7={item.bp7}
+            bp8={item.bp8}
+            index={index}
+          />
+        ))}
+      </div>
+      <div className="container group">
         {firstRow.map((item, index) => (
           <PricingTable
             headerText={item.headerText}
@@ -102,6 +162,7 @@ function Pricing() {
           />
         ))}
       </div>
+      <div className="spliter" />
       <div className="container group">
         {secondRow.map((item, index) => (
           <PricingTable
@@ -116,6 +177,7 @@ function Pricing() {
           />
         ))}
       </div>
+      <div className="spliter" />
       <div className="container group">
         {thirdRow.map((item, index) => (
           <PricingTable

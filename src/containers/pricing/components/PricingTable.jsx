@@ -1,13 +1,24 @@
 import React from 'react';
 
-function pricingTable({ headerText, subHeader, header, pricing, bp1, bp2, bp3 }) {
+function pricingTable({
+  headerText,
+  subHeader,
+  header,
+  pricing,
+  bp1,
+  bp2,
+  bp3,
+  bp4,
+  bp5,
+  bp6,
+  bp7,
+  bp8,
+}) {
   return (
     // <div className="container group">
     <div>
       <h1 className="headerText">{headerText}</h1>
-      <h2 className="sub-header-text">
-        {subHeader}
-      </h2>
+      <h2 className="sub-header-text">{subHeader}</h2>
       <div className="grid-1-5">
         <h2>{header}</h2>
         <h3>
@@ -17,6 +28,11 @@ function pricingTable({ headerText, subHeader, header, pricing, bp1, bp2, bp3 })
           <li>{bp1}</li>
           <li>{bp2}</li>
           <li>{bp3}</li>
+          <li>{bp4}</li>
+          <li>{bp5}</li>
+          <li>{bp6}</li>
+          <li>{bp7}</li>
+          <li>{bp8}</li>
         </ul>
       </div>
     </div>
