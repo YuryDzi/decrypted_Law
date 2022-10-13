@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
+import SocialMedia from '../socialMedia/SocialMedia';
 import './navbar.css';
 
 const Navbar = () => {
@@ -18,6 +19,7 @@ const Navbar = () => {
           <p><a href="#features">Pricing</a></p>
         </div>
       </div>
+      <SocialMedia />
       {/* <div className="gpt3__navbar-sign">
         <p>Sign in</p>
         <button type="button">Sign up</button>

@@ -91,6 +91,21 @@
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
 }
 
+.social__media {
+    justify-content: right;
+    display: flex;
+}
+
+.social__media__li {
+    margin-right: 20px;
+}
+
+.main__container {
+    justify-content: right;
+    display: flex;
+    margin-right: 20px;
+}
+
 .gpt3__navbar-menu_container p {
     margin: 1rem 0;
 }
@@ -98,6 +113,7 @@
 .gpt3__navbar-menu_container-links-sign {
     display: none;
 }
+
 
 @media screen and (max-width: 1050px) {
     .gpt3__navbar-links_container {
