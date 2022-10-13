@@ -16,9 +16,9 @@ const MainPage = () => (
       <Navbar />
       <Header />
       <Brand />
-      <Features />
-      <Team />
       <WhatGPT3 />
+      <Team />
+      <Features />
       <CTA />
       <Footer />
     </div>
