@@ -16,10 +16,15 @@ const MainPage = () => (
       <Navbar />
       <Header />
       <Brand />
+      <div className="spliter" />
       <WhatGPT3 />
+      <div className="spliter" />
       <Team />
+      <div className="spliter" />
       <Features />
+      <div className="spliter" />
       <CTA />
+      <div className="spliter" />
       <Footer />
     </div>
   </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
 import SocialMedia from '../socialMedia/SocialMedia';
@@ -11,12 +12,12 @@ const Navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <img src={logo} />
+          <Link to="/"><img src={logo} /></Link>
         </div>
         <div className="gpt3__navbar-links_container">
-          <p><a href="#wgpt3">Philosophy</a></p>
-          <p><a href="#features">Practice</a></p>
-          <p><a href="#features">Pricing</a></p>
+          <p><Link to="/philosophy">Philosophy</Link></p>
+          <p><Link to="/philosophy">Practice</Link></p>
+          <p><Link to="/pricing">Pricing</Link></p>
         </div>
       </div>
       <SocialMedia />
