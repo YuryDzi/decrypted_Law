@@ -3,7 +3,6 @@ import PricingTable from './components/PricingTable';
 import PricingHeader from './components/PricingHeader';
 import Footer from '../footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
-import CTA from '../../components/cta/CTA';
 import './pricing.scss';
 
 function Pricing() {
@@ -153,7 +152,6 @@ function Pricing() {
         ))}
       </div>
       <div className="spliter" />
-      <CTA />
       <Footer />
     </div>
   );
