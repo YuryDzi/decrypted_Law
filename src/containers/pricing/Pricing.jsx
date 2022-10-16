@@ -3,96 +3,128 @@ import PricingTable from './components/PricingTable';
 import PricingHeader from './components/PricingHeader';
 import Footer from '../footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
+import OneBlockPrice from './components/OneBlockPrice';
 import './pricing.scss';
 
 function Pricing() {
-  const combainedRow = [
+  const row1 = [
     {
-      headerText: 'Subscription',
+      headerText: 'On-Demand General Counsel',
       subHeader:
-        'If you are looking for continuous support and guidance on how to manage your legal matters, we offer a monthly prepaid subscription, charged monthly. For example, subscription could provide you with basic on-demand contract review and legal support.',
-      header: 'On-Demand General Counsel',
+        'If you are looking for continuous support and guidance on how to manage your legal matters, we offer a monthly prepaid subscription, charged monthly. For example, monthly subscription could provide you with basic on-demand contract review and legal support.',
+      header: 'Subscription',
       pricing: '495/month',
       bp1: 'some bul',
       bp2: 'another bul',
       bp3: 'yet another bul',
     },
-    {
-      header: 'Custom Contract Templates',
-      pricing: '300/each',
-      bp1: 'Advisor Agreement',
-      bp2: 'Consulting Agreement',
-      bp3: 'Brand Ambassador Agreement',
-      bp4: 'Influencer Sponsorship Agreement',
-      bp5: 'Content Collaboration Agreement',
-      bp6: 'Non-Disclosure Agreement',
-      bp7: 'Employee Offer Letter',
-      bp8: 'Confidential Information and Inventions Assignment',
-    },
-    {
-      header: 'Commercial Contracts and Terms of Service',
-      pricing: '1500/each',
-      bp1: 'Privacy Policy',
-      bp2: 'Terms of Service',
-      bp3: 'Master Services Agreement',
-      bp4: 'Enterprise Services Agreement',
-      bp5: 'Creative Services Agreement',
-      bp6: 'SaaS Agreement',
-      bp7: 'Talent Services Agreement',
-      bp8: 'Software License Agreement',
-    },
   ];
 
-  const firstRow = [
+  const row2 = [
     {
       headerText: 'Corporation / LLC Formations',
-      subHeader:
-        'We’ll get your company up and running, including incorporating or forming with the proper entity, issuing equity, filing the required state and federal forms, and setting up an equity incentive plan.',
+      subHeader: 'We’ll get your company up and running, including incorporating or forming with the proper entity, issuing equity, filing the required state and federal forms, and setting up an equity incentive plan.',
       header: 'Single-Member LLC',
-      pricing: 500,
+      pricing: '500',
       bp1: 'some bul',
       bp2: 'another bul',
       bp3: 'yet another bul',
     },
     {
       header: 'Multi-Member LLC',
-      pricing: 1000,
+      pricing: '1,000',
       bp1: 'some bul',
       bp2: 'another bul',
       bp3: 'yet another bul',
     },
     {
       header: 'Corporation',
-      pricing: 1500,
+      pricing: '1,500',
       bp1: 'some bul',
       bp2: 'another bul',
       bp3: 'yet another bul',
     },
   ];
-  const secondRow = [
+
+  const row3 = [
     {
       headerText: 'Financings',
-      subHeader:
-        'We’ll get your company up and running, including incorporatiEvery fundraising round has its own unique terms that require a custom approach. Below is our standard pricing for typical fundraising events. Give us a call to discuss your particular needs and expectations, and we will work with you to determine a custom upfront flat-fee for your financing round.g or forming with the proper entity, issuing equity, filing the required state and federal forms, and setting up an equity incentive plan.',
+      subHeader: 'Every fundraising round has its own unique terms that require a custom approach. Below is our standard pricing for typical fundraising events. Give us a call to discuss your particular needs and expectations, and we will work with you to determine a custom upfront flat-fee for your financing round.',
       header: 'SAFE Financings',
-      pricing: 1000,
+      pricing: '1,000',
       bp1: 'some bul',
       bp2: 'another bul',
       bp3: 'yet another bul',
     },
     {
       header: 'Convertible Note Financings',
-      pricing: 1500,
+      pricing: '1,500',
       bp1: 'some bul',
       bp2: 'another bul',
       bp3: 'yet another bul',
     },
     {
       header: 'Venture Financings (e.g., Series Seed)',
-      pricing: 15000,
+      pricing: '15,000',
       bp1: 'some bul',
       bp2: 'another bul',
       bp3: 'yet another bul',
+    },
+  ];
+
+  const row4 = [
+    {
+      headerText: 'Custom Contract Templates',
+      subHeader:
+        'As an entrepreneur, you live and breathe contracts. We are ready to provide agreements designed for common contracting needs, which we tailor to your business. These include the following, each for $300. Contact us for your particular needs and we can determine the right package and pricing for you.',
+      header: 'Single-Member LLC',
+      pricing: '300/each',
+      bp1: 'Advisor Agreement',
+      bp2: 'Consulting Agreement',
+      bp3: 'Brand Ambassador Agreement',
+      bp4: 'Influencer Sponsorship Agreement',
+      bp5: 'Content Collaboration agreement',
+      bp6: 'Social Media Appearance Agreement',
+      bp7: 'Non-Disclosure Agreement',
+      bp8: 'Employee Offer Letter',
+    },
+  ];
+  const row5 = [
+    {
+      headerText: 'Commercial Contracts and Terms of Service',
+      subHeader:
+        'We will prepare and provide a custom commercial contract or terms of service tailored for your unique business. We typically charge $1,500 for each. Give us a call to discuss your particular needs and expectations.',
+      header: <br />,
+      pricing: '1,500/each',
+      bp1: 'Privacy Policy',
+      bp2: 'Terms of Service',
+      bp3: 'SaaS agreement',
+      bp4: 'Enterprise Services Agreement',
+      bp5: 'Creative Services Agreement',
+      bp6: 'Talent Services Agreement',
+      bp7: 'Software License Agreement',
+      bp8: 'Design Partner Agreement',
+      bp9: 'Platform Services Agreement',
+      bp10: 'Master Services Agreement',
+    },
+  ];
+
+  const row6 = [
+    {
+      headerText: 'Trademarks',
+      subHeader: 'We will conduct a trademark search, draft and file your trademark application, respond to any non-substantive USPTO Office Actions, and provide the trademark registration certificate when it is issued for $900. The USPTO filing fee is $350, making a total cost of $1,250 (for a trademark application in a single class).',
+      header: <br />,
+      pricing: '1,500/each',
+      bp1: 'Privacy Policy',
+      bp2: 'Terms of Service',
+      bp3: 'SaaS agreement',
+      bp4: 'Enterprise Services Agreement',
+      bp5: 'Creative Services Agreement',
+      bp6: 'Talent Services Agreement',
+      bp7: 'Software License Agreement',
+      bp8: 'Design Partner Agreement',
+      bp9: 'Platform Services Agreement',
+      bp10: 'Master Services Agreement',
     },
   ];
 
@@ -103,8 +135,31 @@ function Pricing() {
       <div className="container group">
         <PricingHeader />
       </div>
+      <div className="spliter" />
       <div className="container group">
-        {combainedRow.map((item, index) => (
+        {row1.map((item, index) => (
+          <OneBlockPrice
+            headerText={item.headerText}
+            subHeader={item.subHeader}
+            header={item.header}
+            pricing={item.pricing}
+            bp1={item.bp1}
+            bp2={item.bp2}
+            bp3={item.bp3}
+            bp4={item.bp4}
+            bp5={item.bp5}
+            bp6={item.bp6}
+            bp7={item.bp7}
+            bp8={item.bp8}
+            bp9={item.bp9}
+            bp10={item.bp10}
+            index={index}
+          />
+        ))}
+      </div>
+      <div className="spliter" />
+      <div className="container group">
+        {row2.map((item, index) => (
           <PricingTable
             headerText={item.headerText}
             subHeader={item.subHeader}
@@ -118,27 +173,15 @@ function Pricing() {
             bp6={item.bp6}
             bp7={item.bp7}
             bp8={item.bp8}
-            index={index}
-          />
-        ))}
-      </div>
-      <div className="container group">
-        {firstRow.map((item, index) => (
-          <PricingTable
-            headerText={item.headerText}
-            subHeader={item.subHeader}
-            header={item.header}
-            pricing={item.pricing}
-            bp1={item.bp1}
-            bp2={item.bp2}
-            bp3={item.bp3}
+            bp9={item.bp9}
+            bp10={item.bp10}
             index={index}
           />
         ))}
       </div>
       <div className="spliter" />
       <div className="container group">
-        {secondRow.map((item, index) => (
+        {row3.map((item, index) => (
           <PricingTable
             headerText={item.headerText}
             subHeader={item.subHeader}
@@ -147,6 +190,79 @@ function Pricing() {
             bp1={item.bp1}
             bp2={item.bp2}
             bp3={item.bp3}
+            bp4={item.bp4}
+            bp5={item.bp5}
+            bp6={item.bp6}
+            bp7={item.bp7}
+            bp8={item.bp8}
+            bp9={item.bp9}
+            bp10={item.bp10}
+            index={index}
+          />
+        ))}
+      </div>
+      <div className="spliter" />
+      <div className="container group">
+        {row4.map((item, index) => (
+          <OneBlockPrice
+            headerText={item.headerText}
+            subHeader={item.subHeader}
+            header={item.header}
+            pricing={item.pricing}
+            bp1={item.bp1}
+            bp2={item.bp2}
+            bp3={item.bp3}
+            bp4={item.bp4}
+            bp5={item.bp5}
+            bp6={item.bp6}
+            bp7={item.bp7}
+            bp8={item.bp8}
+            bp9={item.bp9}
+            bp10={item.bp10}
+            index={index}
+          />
+        ))}
+      </div>
+      <div className="spliter" />
+      <div className="container group">
+        {row5.map((item, index) => (
+          <OneBlockPrice
+            headerText={item.headerText}
+            subHeader={item.subHeader}
+            header={item.header}
+            pricing={item.pricing}
+            bp1={item.bp1}
+            bp2={item.bp2}
+            bp3={item.bp3}
+            bp4={item.bp4}
+            bp5={item.bp5}
+            bp6={item.bp6}
+            bp7={item.bp7}
+            bp8={item.bp8}
+            bp9={item.bp9}
+            bp10={item.bp10}
+            index={index}
+          />
+        ))}
+      </div>
+      <div className="spliter" />
+      <div className="container group">
+        {row6.map((item, index) => (
+          <OneBlockPrice
+            headerText={item.headerText}
+            subHeader={item.subHeader}
+            header={item.header}
+            pricing={item.pricing}
+            bp1={item.bp1}
+            bp2={item.bp2}
+            bp3={item.bp3}
+            bp4={item.bp4}
+            bp5={item.bp5}
+            bp6={item.bp6}
+            bp7={item.bp7}
+            bp8={item.bp8}
+            bp9={item.bp9}
+            bp10={item.bp10}
             index={index}
           />
         ))}
