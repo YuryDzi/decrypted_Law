@@ -14,15 +14,15 @@ function Pricing() {
         'If you are looking for continuous support and guidance on how to manage your legal matters, we offer a monthly prepaid subscription, charged monthly. For example, monthly subscription could provide you with basic on-demand contract review and legal support.',
       header: 'Subscription',
       pricing: '495/month',
-      bp1: 'some bul',
-      bp2: 'another bul',
-      bp3: 'yet another bul',
+      bp1: '',
+      bp2: '',
+      bp3: '',
     },
   ];
 
   const row2 = [
     {
-      headerText: 'Corporation / LLC Formations',
+      headerText: 'Corporation & LLC Formations',
       subHeader: 'We’ll get your company up and running, including incorporating or forming with the proper entity, issuing equity, filing the required state and federal forms, and setting up an equity incentive plan.',
       header: 'Single-Member LLC',
       pricing: '500',
@@ -52,9 +52,9 @@ function Pricing() {
       subHeader: 'Every fundraising round has its own unique terms that require a custom approach. Below is our standard pricing for typical fundraising events. Give us a call to discuss your particular needs and expectations, and we will work with you to determine a custom upfront flat-fee for your financing round.',
       header: 'SAFE Financings',
       pricing: '1,000',
-      bp1: 'some bul',
-      bp2: 'another bul',
-      bp3: 'yet another bul',
+      bp1: '',
+      bp2: '',
+      bp3: '',
     },
     {
       header: 'Convertible Note Financings',
@@ -112,19 +112,11 @@ function Pricing() {
   const row6 = [
     {
       headerText: 'Trademarks',
-      subHeader: 'We will conduct a trademark search, draft and file your trademark application, respond to any non-substantive USPTO Office Actions, and provide the trademark registration certificate when it is issued for $900. The USPTO filing fee is $350, making a total cost of $1,250 (for a trademark application in a single class).',
-      header: '',
-      pricing: '1,500/each',
-      bp1: 'Privacy Policy',
-      bp2: 'Terms of Service',
-      bp3: 'SaaS agreement',
-      bp4: 'Enterprise Services Agreement',
-      bp5: 'Creative Services Agreement',
-      bp6: 'Talent Services Agreement',
-      bp7: 'Software License Agreement',
-      bp8: 'Design Partner Agreement',
-      bp9: 'Platform Services Agreement',
-      bp10: 'Master Services Agreement',
+      subHeader: 'We will conduct a trademark search, draft and file your trademark application, respond to any non-substantive USPTO Office Actions, and provide the trademark registration certificate.',
+      header: 'Trademark Registration',
+      pricing: '1,250',
+      bp1: 'USPTO FILING',
+      bp2: 'REGISTRATION CERTIFICATE',
     },
   ];
 

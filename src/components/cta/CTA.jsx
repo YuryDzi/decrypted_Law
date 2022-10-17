@@ -5,10 +5,10 @@ const CTA = () => (
   <div className="gpt3__cta">
     <div className="gpt3__cta-content">
       <p>Contact Us</p>
-      <h3>Register Today & start exploring the endless possibilities.</h3>
+      <h3>Set up a free 30-minute consultation today</h3>
     </div>
     <div className="gpt3__cta-btn">
-      <button type="button" onClick={() => window.location.href = 'mailto:yourmail@domain.com'}>Contact Us</button>
+      <button type="button" onClick={() => window.location.href = 'mailto:yourmail@domain.com'}>Email us</button>
     </div>
   </div>
 );
