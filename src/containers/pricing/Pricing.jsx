@@ -132,6 +132,7 @@ function Pricing() {
     <div>
       <div />
       <Navbar />
+      <div className="spliter" />
       <div className="container group">
         <PricingHeader />
       </div>

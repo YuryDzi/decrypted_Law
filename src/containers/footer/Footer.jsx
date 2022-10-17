@@ -7,7 +7,8 @@ import ContactInput from '../../components/contactInput/ContactInput';
 const Footer = () => (
   <div className="gpt3__footer section__padding">
     <div className="gpt3__footer-heading">
-      <h1 className="gradient__text">Leave us your email</h1>
+      <h1 className="gradient__text">Let&#39;s Talk</h1>
+      <h2 className="gradient__text">If you like our approach and are curious to learn more, we&#39;re happy to arrange a free 30-minute consultation to meet you, discuss your business and see how Decrypted can best be of service to you.</h2>
     </div>
     <ContactInput />
     <FaqTable />
