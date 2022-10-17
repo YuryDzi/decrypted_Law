@@ -77,7 +77,7 @@ function Pricing() {
       headerText: 'Custom Contract Templates',
       subHeader:
         'As an entrepreneur, you live and breathe contracts. We are ready to provide agreements designed for common contracting needs, which we tailor to your business. These include the following, each for $300. Contact us for your particular needs and we can determine the right package and pricing for you.',
-      header: 'Single-Member LLC',
+      header: '',
       pricing: '300/each',
       bp1: 'Advisor Agreement',
       bp2: 'Consulting Agreement',
@@ -94,7 +94,7 @@ function Pricing() {
       headerText: 'Commercial Contracts and Terms of Service',
       subHeader:
         'We will prepare and provide a custom commercial contract or terms of service tailored for your unique business. We typically charge $1,500 for each. Give us a call to discuss your particular needs and expectations.',
-      header: <br />,
+      header: '',
       pricing: '1,500/each',
       bp1: 'Privacy Policy',
       bp2: 'Terms of Service',
@@ -113,7 +113,7 @@ function Pricing() {
     {
       headerText: 'Trademarks',
       subHeader: 'We will conduct a trademark search, draft and file your trademark application, respond to any non-substantive USPTO Office Actions, and provide the trademark registration certificate when it is issued for $900. The USPTO filing fee is $350, making a total cost of $1,250 (for a trademark application in a single class).',
-      header: <br />,
+      header: '',
       pricing: '1,500/each',
       bp1: 'Privacy Policy',
       bp2: 'Terms of Service',

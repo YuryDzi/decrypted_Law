@@ -18,7 +18,7 @@ function Team() {
             </div>
             <div className="box-desc">
               <h5>Alexander Daniels</h5>
-              <p>Senior Partner</p>
+              <p>Co-Founder</p>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ function Team() {
             </div>
             <div className="box-desc">
               <h5>Nareg Essaghoolian</h5>
-              <p>Senior Partner</p>
+              <p>Co-Founder</p>
             </div>
           </div>
         </div>
