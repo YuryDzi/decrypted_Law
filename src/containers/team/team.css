@@ -5,7 +5,6 @@ body {
 
 .box {
   border-radius: 150px;
-  background: rgba(0,0,0,0.5);
   position: relative;
   overflow: hidden;
   text-align: center;
