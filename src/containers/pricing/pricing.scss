@@ -68,7 +68,7 @@ body {
 
 .grid__container {
   justify-content: center;
-  // display: flex; //grid setup
+  // display: grid; //grid setup
   text-align: center;
   margin-left: 11%;
   margin-top: 15px;
@@ -76,9 +76,9 @@ body {
 
 .grid__one__container {
     justify-content: center;
-    // display: flex; //grid setup
+    display: flex; //grid setup
     text-align: center;
-    margin-left: 36.5%;
+    // margin-left: 36.5%;
 }
 
 .group:after {
@@ -96,6 +96,14 @@ body {
   // position: relative;
   // text-align: center;
   transition: all .2s ease-in-out;
+}
+
+@media screen and (min-width: 400px) {
+  .grid__one__container {
+    .grid-1-5 {
+
+    }
+  }
 }
 
 @media screen and (min-width: 700px) {
