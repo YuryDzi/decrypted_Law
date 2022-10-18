@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 function SocialMedia() {
   return (
@@ -8,17 +8,17 @@ function SocialMedia() {
       <div className="social__media">
         <ul className="social__media">
           <li className="social__media__li">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook size="2em" color="white" />
+            <a href="https://www.linkedin.com/company/decrypted-law/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size="2em" color="white" />
             </a>
           </li>
           <li className="social__media__li">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/decryptedlaw/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size="2em" color="white" />
             </a>
           </li>
           <li className="social__media__li">
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/DecryptedLaw" target="_blank" rel="noopener noreferrer">
               <FaTwitter size="2em" color="white" />
             </a>
           </li>
