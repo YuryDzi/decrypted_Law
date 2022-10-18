@@ -158,16 +158,6 @@ function Pricing() {
             subHeader={item.subHeader}
             header={item.header}
             pricing={item.pricing}
-            bp1={item.bp1}
-            bp2={item.bp2}
-            bp3={item.bp3}
-            bp4={item.bp4}
-            bp5={item.bp5}
-            bp6={item.bp6}
-            bp7={item.bp7}
-            bp8={item.bp8}
-            bp9={item.bp9}
-            bp10={item.bp10}
             index={index}
           />
         ))}
@@ -180,16 +170,6 @@ function Pricing() {
             subHeader={item.subHeader}
             header={item.header}
             pricing={item.pricing}
-            bp1={item.bp1}
-            bp2={item.bp2}
-            bp3={item.bp3}
-            bp4={item.bp4}
-            bp5={item.bp5}
-            bp6={item.bp6}
-            bp7={item.bp7}
-            bp8={item.bp8}
-            bp9={item.bp9}
-            bp10={item.bp10}
             index={index}
           />
         ))}

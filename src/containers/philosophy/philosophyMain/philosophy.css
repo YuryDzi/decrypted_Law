@@ -1,376 +1,113 @@
-@import url(https://fonts.googleapis.com/css?family=Teko:300,400,500);
+.gpt3__whatgpt3 {
+  display: flex;
+  flex-direction: column;
 
-/* -------------------------------- 
- 
-Primary style
-  
--------------------------------- */
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
-}
-  
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  padding: 2rem;
+  background: var(--color-footer);
 
-.cd-main-content {
-  /* you need to assign a min-height to the main content so that the children can inherit it*/
-  height: 1000px;
-  position: relative;
-  z-index: 1;
-}
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
 
-.cd-fixed-bg {
-  position: relative;
-  min-height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 1;
-  background-attachment: fixed;
-  background-image: url("https://i.imgur.com/FM9ibn4.jpg");
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
-.cd-fixed-bg h1{
-	font-size: 65px;
-  font-weight: 300;
-  font-family: teko;
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 1170px;
-  text-align: center;
-  font-size: 30px;
-  font-size: 1.875rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  color: white;
+.gpt3__whatgpt3-feature {
+  display: flex;
 }
 
-
-.cd-fixed-bg h2{
-  font-size: 30px !important;
-  font-weight: 30 !important;
-  text-transform: none !important;
-  font-family: teko;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 80%;
-  /* max-width: 1170px; */
-  text-align:center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  color: white;
-  line-height: 1.5;
-}
-
-
-@media only screen and (min-width: 768px) {
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-fixed-bg {
-    background-attachment: fixed;
-  }
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
-    font-size: 48px;
-    font-weight: 300;
-  }
-}
-
-
-@media only screen and (min-width: 768px) {
-  .cd-scrolling-bg {
-    padding: 8em 0;
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 2;
-    font-weight: 300;
-  }
-}
-
-
-/***** Fullpage.js *****/
-
-
-#superContainer {
-    height: 100%;
-    position: relative;
-    
-
-	/* Touch detection for Windows 8 */
-    -ms-touch-action: none;
-
-    /* IE 11 on Windows Phone 8.1*/
-	touch-action: none;
-}
-.fp-section {
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.fp-slide {
-    float: left;
-}
-.fp-slide, .fp-slidesContainer {
-    height: 100%;
-    display: block;
-}
-.fp-slides {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-.fp-section.fp-table, .fp-slide.fp-table {
-    display: table;
-    width: 100%;
-}
-.fp-tableCell {
-    display: flex;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-}
-.fp-slidesContainer {
-    float: left;
-    position: relative;
-}
-.fp-controlArrow {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-top: -38px;
-}
-.fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
-}
-.fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
-}
-.fp-scrollable {
-    overflow: scroll;
-}
-.fp-easing {
-    -webkit-transition: all 0.7s ease-out;
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
-}
-#fp-nav {
-    position: fixed;
-    z-index: 100;
-    margin-top: -32px;
-    top: 50%;
-    opacity: 1;
-}
-#fp-nav.right {
-    right: 17px;
-}
-#fp-nav.left {
-    left: 17px;
-}
-.fp-slidesNav{
-    position: absolute;
-    z-index: 4;
-    left: 50%;
-    opacity: 1;
-}
-.fp-slidesNav.bottom {
-    bottom: 17px;
-}
-.fp-slidesNav.top {
-    top: 17px;
-}
-#fp-nav ul,
-.fp-slidesNavul {
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-feature .gpt3__features-container__feature {
   margin: 0;
-  padding: 0;
-}
-#fp-nav li,
-.fp-slidesNavli {
-    display: block;
-    width: 14px;
-    height: 13px;
-    margin: 7px;
-    position:relative;
-}
-.fp-slidesNavli {
-    display: inline-block;
-}
-#fp-nav li a,
-.fp-slidesNavli a {
-    display: block;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    text-decoration: none;
-}
-#fp-nav li .active span,
-.fp-slidesNav.active span {
-    background: #333;
-}
-#fp-nav span,
-.fp-slidesNavspan {
-    top: 2px;
-    left: 2px;
-    width: 8px;
-    height: 8px;
-    border: 1px solid #000;
-    background: rgba(0, 0, 0, 0);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-}
-.fp-tooltip {
-    position: absolute;
-    color: #fff;
-    font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
-    top: -2px;
-}
-.fp-tooltip.right {
-    right: 20px;
-}
-.fp-tooltip.left {
-    left: 20px;
 }
 
-.cd-main-nav li:hover { 
-background: #FFF;
-transition: all 350ms ease;
-max-height: 69px;
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-feature .gpt3__features-container_feature-text {
+  max-width: 700px;
 }
 
-
-.section {
-    padding: 0;
-}
-.section .cd-container {
-    width: 100%;
-    max-width: 100%;
-}
-
-.smoly { 
-max-width: 70px!important;
-display: inline-block!important;
+.gpt3__whatgpt3-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin: 4rem 0 2rem;
 }
 
-.headroom {
-    transition: transform 200ms linear;
-   background: rgba(white, 0.5);
-  box-shadow: 0 3px 3px rgba(black,0.1);;
+.gpt3__whatgpt3-heading__phil h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  /* max-width: 510px; */
   text-align: center;
 }
-.headroom--pinned {
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
 
+.gpt3__whatgpt3-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
 }
-  
-  /* Preloader */
-.preloader_hide {opacity:0; width:100%; overflow-x:hidden;}
-#preloader {
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background-color:#ecf0f1;
-    z-index: 99999; 
-}
-#preloader div {
-    position:fixed;
-    left:0;
-    top:50%;
-    display:block;
-    width:100%;
-    height:10px;
-    margin:-5px 0 0;
-    text-align:center;
 
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-container .gpt3__features-container_feature-text {
+  margin-top: 0.5rem;
 }
-#preloader em {
-    display:inline-block;
-    vertical-align:top;
-    margin:0 2px 0 5px;
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background-color:#e74c3c;
-    animation: 1.2s ease-in-out normal none infinite preload_animate;
-    -webkit-animation: 1.2s ease-in-out normal none infinite preload_animate;
+
+.gpt3__whatgpt3-feature__phil p {
+  font-size: 17px;
+  border-bottom: 1px dotted;
+  padding: 20px;
 }
-#preloader em:nth-child(1) {
-    animation-delay:0s;
-    -moz-animation-delay:0s;
-    -webkit-animation-delay:0s;
+
+@media screen and (max-width: 850px) {
+  .gpt3__whatgpt3-heading {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0rem;
+  }
+
+  .gpt3__whatgpt3-heading p {
+      margin-top: 1rem;
+  }
 }
-#preloader em:nth-child(2) {
-    animation-delay:0.2s;
-    -moz-animation-delay:0.2s;
-    -webkit-animation-delay:0.2s;
+
+@media screen and (max-width: 650px) {
+  /* Customizing feature component as per needs */
+  .gpt3__whatgpt3-feature .gpt3__features-container__feature {
+      flex-direction: column;
+  }
+
+  /* Customizing feature component as per needs */
+  .gpt3__whatgpt3-feature .gpt3__features-container_feature-text {
+      margin-top: 0.5rem;
+  }
+
+  .gpt3__whatgpt3-heading h1 {
+      font-size: 28px;
+      line-height: 40px;
+  }
 }
-#preloader em:nth-child(3) {
-    animation-delay:0.4s;
-    -moz-animation-delay:0.4s;
-    -webkit-animation-delay:0.4s;
-}
-#preloader em:nth-child(4) {
-    animation-delay:0.6s;
-    -moz-animation-delay:0.6s;
-    -webkit-animation-delay:0.6s;
-}
-#preloader em:nth-child(5) {
-    animation-delay:0.8s;
-    -moz-animation-delay:0.8s;
-    -webkit-animation-delay:0.8s;
-}
-@-webkit-keyframes preload_animate {
-    0% {-webkit-transform: scale(1); opacity:1;}
-    50% {-webkit-transform: scale(0.5); opacity:0.5;}
-    100% {-webkit-transform: scale(1); opacity:1;}
-}
-@keyframes preload_animate {
-    0% {transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1); opacity:1;}
-    50% {transform: scale(0.5); -ms-transform: scale(0.5); -webkit-transform: scale(0.5); opacity:0.5;}
-    100% {transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1); opacity:1;}
+
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .gpt3__whatgpt3-container .gpt3__features-container__feature {
+      margin: 1rem 0;
+      min-width: 100%;
+  }
 }
