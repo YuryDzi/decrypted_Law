@@ -12,11 +12,17 @@ const Navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <Link to="/"><img src={logo} /></Link>
+          <Link to="/">
+            <img src={logo} />
+          </Link>
         </div>
         <div className="gpt3__navbar-links_container">
-          <p><Link to="/philosophy">Philosophy</Link></p>
-          <p><Link to="/pricing">Pricing</Link></p>
+          <p>
+            <Link to="/philosophy">Philosophy</Link>
+          </p>
+          <p>
+            <Link to="/pricing">Pricing</Link>
+          </p>
           <a href="tel:+14242761032">Contact</a>
         </div>
       </div>
@@ -26,21 +32,35 @@ const Navbar = () => {
         <button type="button">Sign up</button>
       </div> */}
       <div className="gpt3__navbar-menu">
-        {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+        {toggleMenu ? (
+          <RiCloseLine
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <RiMenu3Line
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
         {toggleMenu && (
-        <div className="gpt3__navbar-menu_container scale-up-center">
-          <div className="gpt3__navbar-menu_container-links">
-            <p><a href="#possibility">Philosophy</a></p>
-            <p><a href="#features">Practice</a></p>
-            <p><a href="#blog">Pricing</a></p>
-          </div>
-          {/* <div className="gpt3__navbar-menu_container-links-sign">
+          <div className="gpt3__navbar-menu_container scale-up-center">
+            <div className="gpt3__navbar-menu_container-links">
+              <p>
+                <Link to="/philosophy">Philosophy</Link>
+              </p>
+              <p>
+                <Link to="/pricing">Pricing</Link>
+              </p>
+              <a href="tel:+14242761032">Contact</a>
+            </div>
+            {/* <div className="gpt3__navbar-menu_container-links-sign">
             <p>Sign in</p>
             <button type="button">Sign up</button>
           </div> */}
-        </div>
+          </div>
         )}
       </div>
     </div>
