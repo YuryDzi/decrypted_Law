@@ -47,6 +47,20 @@
     cursor: pointer;
 }
 
+.gpt3__navbar-links_container a,
+.gpt3__navbar-sign a,
+.gpt3__navbar-menu_container a {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    /* line-height: 25px; */
+    text-transform: capitalize;
+
+    margin: 0 1px;
+    cursor: pointer;
+}
+
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container button {
     padding: 0.5rem 1rem;

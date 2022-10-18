@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="gpt3__navbar-links_container">
           <p><Link to="/philosophy">Philosophy</Link></p>
           <p><Link to="/pricing">Pricing</Link></p>
-          <p><Link to="/#features">Contact</Link></p>
+          <a href="tel:+14242761032">Contact</a>
         </div>
       </div>
       <SocialMedia />

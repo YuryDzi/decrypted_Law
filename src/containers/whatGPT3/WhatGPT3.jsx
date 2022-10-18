@@ -8,8 +8,8 @@ const WhatGPT3 = () => (
       <Feature title="DECRYPTEDLEGAL &amp; CONSULTING" text="The firm for entrepreneurs. Prioritizing what matters. Innovative expert service. Aligned incentives. Accessible pricing. No billing surprises.." />
     </div>
     <div className="gpt3__whatgpt3-heading">
-      <h1 className="gradient__text">WE FOCUS ON LEGAL ISSUES RELEVANT TO SUCCESSFUL BUSINESSES AND CREATORS</h1>
-      <p> Contact Us</p>
+      <h1 className="gradient__text">YOUR CONFIDANTE ON LEGAL AND BUSINESS ISSUES</h1>
+      <a href="tel:+14242761032"> Contact Us</a>
     </div>
     <div className="gpt3__whatgpt3-container">
       <Feature title="Subscriptions" text="Access to immediate and ongoing legal and advisory services for an upfront, fixed monthly cost." />
