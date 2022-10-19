@@ -22,7 +22,6 @@ body {
   font-size: 95%;
   min-height: 100%;
   line-height: 1.5;
-  // padding: 2.5em 0;
 }
 
 .pricing-page {
@@ -39,30 +38,24 @@ body {
   padding: 20px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
   .sub-header-text__header  {
     font-size: 15px;
     text-align: justify;  /* For Edge */
-    text-align-last: justify;
+    // text-align-last: end;
   }
 }
 
-// this part
 
 .headerText{
-    // padding-top: 100px;
     text-align: center;
 }
 
 .sub-header-text{
-    // padding-left: 110px;
-    // padding-right: 110px;
-    // padding-bottom: 20px;
     text-align: center;
     text-transform: capitalize;
 }
 
-//this part 
 
 .container {
   margin: 0 auto;
@@ -76,7 +69,6 @@ body {
 
 .grid__container {
   justify-content: center;
-  // display: grid; //grid setup
   text-align: center;
   margin-left: 11%;
   margin-top: 15px;
@@ -86,7 +78,6 @@ body {
     justify-content: center;
     display: flex; //grid setup
     text-align: center;
-    // margin-left: 36.5%;
 }
 
 .group:after {
