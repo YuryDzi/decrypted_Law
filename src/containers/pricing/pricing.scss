@@ -39,6 +39,14 @@ body {
   padding: 20px;
 }
 
+@media screen and (min-width: 400px) {
+  .sub-header-text__header  {
+    font-size: 15px;
+    text-align: justify;  /* For Edge */
+    text-align-last: justify;
+  }
+}
+
 // this part
 
 .headerText{
@@ -98,13 +106,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-@media screen and (min-width: 400px) {
-  .grid__one__container {
-    .grid-1-5 {
 
-    }
-  }
-}
 
 @media screen and (min-width: 700px) {
   .grid-1-5 {
