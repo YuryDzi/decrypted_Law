@@ -9,29 +9,21 @@ function CTA() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "replace with service id",
-        "replace with template id",
-        form.current,
-        "replace with user id"
-      )
-      .then(
-        (result) => {
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_KEY_ID)
+      .then((result) => {
           console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
+      }, (error) => {
           console.log(error.text);
-        }
-      );
+      });
   };
-  return (
-    <div className="gpt3__cta">
+    return (
+      <div className="gpt3__cta">
         <div className="gpt3__cta-content">
-        <p>Contact us</p>
-        <h3>Send us a message or email us directly at hello@decryptedlaw.com </h3>
-      </div>
+          <p>Contact us</p>
+          <h3>
+            Send us a message or email us directly at hello@decryptedlaw.com{" "}
+          </h3>
+        </div>
         <form className="form-gpt3" ref={form} onSubmit={sendEmail}>
           <label>First & Last Name</label>
           <input type="text" name="user_name" />
@@ -46,12 +38,12 @@ function CTA() {
           </div>
           {/* <input type="submit" value="Send" /> */}
         </form>
-      {/* </div> */}
-      {/* <div className="gpt3__cta-btn">
+        {/* </div> */}
+        {/* <div className="gpt3__cta-btn">
       <button type="button" ref={form} onClick={sendEmail}>Send</button>
     </div> */}
-    </div>
-  );
-}
+      </div>
+    );
+  };
 
 export default CTA;
