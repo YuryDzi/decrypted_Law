@@ -54,7 +54,7 @@ const Navbar = () => {
               <p>
                 <Link to="/pricing">Pricing</Link>
               </p>
-              <a href="tel:+14242761032">Contact</a>
+              <a href="mailto:hello@decryptedlaw.com?subject=Decrypted Website Contact Form">Contact</a>
             </div>
             {/* <div className="gpt3__navbar-menu_container-links-sign">
             <p>Sign in</p>
