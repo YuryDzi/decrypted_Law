@@ -28,7 +28,10 @@ function CTA() {
   };
   return (
     <div className="gpt3__cta">
-      <div className="gpt3__cta-content">
+        <div className="gpt3__cta-content">
+        <p>Contact us</p>
+        <h3>Need to come up with the text for this position & update it</h3>
+      </div>
         <form className="form-gpt3" ref={form} onSubmit={sendEmail}>
           <label>First & Last Name</label>
           <input type="text" name="user_name" />
@@ -43,7 +46,7 @@ function CTA() {
           </div>
           {/* <input type="submit" value="Send" /> */}
         </form>
-      </div>
+      {/* </div> */}
       {/* <div className="gpt3__cta-btn">
       <button type="button" ref={form} onClick={sendEmail}>Send</button>
     </div> */}

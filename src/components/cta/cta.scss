@@ -30,7 +30,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     font-size: 16px;
     }
     textarea {
@@ -77,10 +77,9 @@
 
 .gpt3__cta-btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
-    margin-left: 6.3rem;
+    margin-right: auto;
+    margin-left: 70%;
 }
 
 .gpt3__cta-btn button {
