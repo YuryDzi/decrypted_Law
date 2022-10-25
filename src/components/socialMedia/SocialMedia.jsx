@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
 
 function SocialMedia() {
   return (
@@ -18,8 +18,8 @@ function SocialMedia() {
             </a>
           </li>
           <li className="social__media__li">
-            <a href="https://twitter.com/DecryptedLaw" target="_blank" rel="noopener noreferrer">
-              <FaTwitter size="2em" color="white" />
+            <a href="https://www.tiktok.com/@decryptedlaw" target="_blank" rel="noopener noreferrer">
+              <FaTiktok size="2em" color="white" />
             </a>
           </li>
         </ul>
