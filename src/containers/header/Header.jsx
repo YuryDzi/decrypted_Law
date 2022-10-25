@@ -9,10 +9,8 @@ const Header = () => (
       <h1 className="gradient__text">DECRYPTED</h1>
       <h1 className="gradient__text">LEGAL &amp; CONSULTING</h1>
       <p>
-        Decrypted is the modern law firm built for entrepreneurial startups,
-        creators, and small business owners. Expert attorney advice. Upfront
-        fixed fees. Subscription plans. On-demand legal consulting. Aligned
-        incentives. No surprises.
+        The firm for entrepreneurs. Prioritizing what matters. Innovative expert
+        service. Aligned incentives. Accessible pricing. No billing surprises.
       </p>
     </div>
 
