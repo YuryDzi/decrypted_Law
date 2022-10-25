@@ -30,7 +30,7 @@ function CTA() {
     <div className="gpt3__cta">
         <div className="gpt3__cta-content">
         <p>Contact us</p>
-        <h3>Need to come up with the text for this position & update it</h3>
+        <h3>Send us a message or email us directly at hello@decryptedlaw.com </h3>
       </div>
         <form className="form-gpt3" ref={form} onSubmit={sendEmail}>
           <label>First & Last Name</label>
