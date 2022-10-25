@@ -5,7 +5,7 @@ import './features.css';
 const featuresData = [
   {
     title: 'Your On-Demand General Counsel',
-    text: 'Your committed in-house counsel, there to dissect problems, deliver practicaladvice and manage legal operations.',
+    text: 'Your committed in-house counsel, there to dissect problems, deliver practical advice and manage legal operations.',
   },
   {
     title: 'Launch Your Business',

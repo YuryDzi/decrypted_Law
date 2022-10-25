@@ -14,7 +14,7 @@ function PhilosophyMain() {
         <p>
           We founded Decrypted as a new type of legal services provider run by
           former “Big Law” attorneys who sensed there must be a better way to
-          serve entrepreneurs. <br /><br />Our Approach Most entrepreneurs complain that
+          serve entrepreneurs. <br /><br /> Most entrepreneurs complain that
           contacting an attorney feels like an emergency room visit. That the
           services are ambiguous and confusing. That they struggle with knowing
           the risks or the benefits of preventative legal care until it is too

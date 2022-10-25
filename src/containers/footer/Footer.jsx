@@ -19,17 +19,16 @@ const Footer = () => (
       <div className="gpt3__footer-links_div">
         <h4>Company</h4>
         <p>Terms & Conditions </p>
-        <p>Privacy Policy</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
-        <p>424 276-10327</p>
+        <p>424 276-1032</p>
         <p>hello@decryptedlaw.com</p>
       </div>
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2022 Decrypted Legal & Consulting.  All rights reserved.</p>
+      <p>@2022 Decrypted Legal & Consulting, PC  All rights reserved.</p>
     </div>
   </div>
 );
