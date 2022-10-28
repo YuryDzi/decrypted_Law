@@ -6,7 +6,7 @@ const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div className="gpt3__whatgpt3-feature">
       <Feature
-        title="DECRYPTEDLEGAL &amp; CONSULTING"
+        title="DECRYPTED LEGAL &amp; CONSULTING"
         text=" The firm for entrepreneurs. Prioritizing what matters. Innovative expert
         service. Aligned incentives. Accessible pricing. No billing surprises."
       />
