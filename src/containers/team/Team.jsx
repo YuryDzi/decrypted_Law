@@ -19,6 +19,13 @@ function Team() {
             <div className="box-desc">
               <h5>Alexander Daniels</h5>
               <p>Co-Founder</p>
+              <ul>
+                <li>Duke University, BA (Economics; Environmental Policy &amp; Sciences)</li>
+                <li>Wharton, MBA</li>
+                <li>University of Pennsylvania Law School, JD</li>
+                <li>Cooley, General Corporate Associate</li>
+                <li>Surfer, wannabee historian and lover of the outdoors</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -34,6 +41,13 @@ function Team() {
             <div className="box-desc">
               <h5>Nareg Essaghoolian</h5>
               <p>Co-Founder</p>
+              <ul>
+                <li>California State University, Northridge, BS (Business Law)</li>
+                <li>UCLA School of Law, JD</li>
+                <li>Former podcast host and producer</li>
+                <li>Cooley, General Corporate Associate</li>
+                <li>Basketball, crypto enthusiast and restaurant explorer</li>
+              </ul>
             </div>
           </div>
         </div>

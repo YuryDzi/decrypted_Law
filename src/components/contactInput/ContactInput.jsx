@@ -9,7 +9,7 @@ function ContactInput() {
         <span />
         <span />
         <span />
-        Call Us
+        Contact us
       </a>
     </div>
   );
