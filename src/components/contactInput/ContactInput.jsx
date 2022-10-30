@@ -4,7 +4,7 @@ import './contactInput.scss';
 function ContactInput() {
   return (
     <div className="button__class">
-      <a href="tel:+14242761032">
+      <a href="#form">
         <span />
         <span />
         <span />

@@ -24,7 +24,7 @@ function CTA() {
             Send us a message or email us directly at hello@decryptedlaw.com{" "}
           </h3>
         </div>
-        <form className="form-gpt3" ref={form} onSubmit={sendEmail}>
+        <form className="form-gpt3" ref={form} onSubmit={sendEmail} id="form">
           <label>First & Last Name</label>
           <input type="text" name="user_name" />
           <label>Email</label>
