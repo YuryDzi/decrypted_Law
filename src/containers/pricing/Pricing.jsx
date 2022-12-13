@@ -13,7 +13,7 @@ function Pricing() {
       subHeader:
         'If you are looking for continuous support and guidance on how to manage your legal matters, we offer a monthly prepaid subscription, charged monthly. For example, monthly subscription could provide you with basic on-demand contract review and legal support.',
       header: 'Subscription',
-      pricing: '495/month',
+      pricing: '500/month',
       bp1: '',
       bp2: '',
       bp3: '',

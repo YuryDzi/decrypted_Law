@@ -15,7 +15,7 @@ const WhatGPT3 = () => (
       <h1 className="gradient__text">
         YOUR CONFIDANTE ON LEGAL AND BUSINESS ISSUES
       </h1>
-      <a href="tel:+14242761032"> Contact Us</a>
+      <a href="/#form"> Contact Us</a>
     </div>
     <div className="gpt3__whatgpt3-container">
       <Feature

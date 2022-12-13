@@ -6,7 +6,7 @@ body {
 .box {
   border-radius: 150px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
   margin: 20px;
 }
@@ -17,7 +17,7 @@ body {
   top: 0px;
   width: 0px;
   height: 100%;
-  border-radius: 150px;
+  /* border-radius: 150px; */
   box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
@@ -71,3 +71,10 @@ body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
 }
+
+@media screen and (max-width: 600px) {
+  .box  {
+
+  }
+}
+
