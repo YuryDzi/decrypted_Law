@@ -5,15 +5,16 @@ import './cta.scss';
 /* eslint-disable */
 function CTA() {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_KEY_ID)
       .then((result) => {
           console.log(result.text);
+          alert("Form Submitted")
       }, (error) => {
           console.log(error.text);
+          alert("Error");
       });
   };
     return (

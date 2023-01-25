@@ -23,7 +23,7 @@ const Navbar = () => {
           <p>
             <Link to="/pricing">Pricing</Link>
           </p>
-          <a href="#form">Contact</a>
+          <a href="http://decryptedlaw.com/#form">Contact</a>
         </div>
       </div>
       <SocialMedia />
